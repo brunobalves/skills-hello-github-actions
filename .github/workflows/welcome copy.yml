@@ -1,8 +1,6 @@
-name: Copy Post welcome comment exec on push 
+name: Copy Post welcome comment workflowdispatch
 on:
-  push:
-    branches: 
-      - welcome-workflow
+  workflow-dispatch:
 permissions:
   pull-requests: write
 jobs:
