@@ -1,6 +1,6 @@
 name: Copy Post welcome comment workflowdispatch
 on:
-  workflow-dispatch:
+  workflow_dispatch:
 permissions:
   pull-requests: write
 jobs:
