@@ -1,0 +1,13 @@
+name: workflowdispatch
+on:
+  push:
+    branches: [welcome-workflow] 
+  workflow_dispatch:
+permissions:
+  pull-requests: write
+jobs:
+  welcome:
+    name: Post welcome comment
+    runs-on: ubuntu-slim
+    steps:
+      - run: echo "Welcome!"
